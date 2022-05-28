@@ -1,0 +1,96 @@
+body{
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height:100vh;
+    background-color: #9acd32;
+}
+
+
+.container {
+     
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     width: 50vw;
+     min-height: 50vh;
+     height: auto;
+     border: 1px solid red;
+
+     background-color: rgb(82, 208, 247);
+     border-radius: 15px 0 15px 15px;
+     font-weight: 800;
+     color: rgb(44, 14, 4);
+     overflow: hidden;
+ }
+
+ #reload {
+     position: absolute;
+     bottom: 0;
+     width: 100%;
+     height: 10%;
+     min-height: 20px;
+     background-color: aqua;
+     color: blue;
+     font-weight: 1000;
+     border: none;
+     cursor: pointer;
+ }
+
+ #reload:hover {
+     background-color: rgb(28, 151, 151);
+ }
+
+ #quote {
+     display: flex;
+     padding-right: 10px;
+     position: absolute;
+     top: 25%;
+     left: 50%;
+     transform: translate(-50%);
+     width: 90%;
+     height: 50%;
+     /* border: 1px solid green; */
+     text-align: center;
+     justify-content: center;
+     align-items: center;
+     text-overflow: ellipsis;
+
+ }
+
+ #authr {
+     position: absolute;
+     bottom: 15%;
+     right: 5%;
+ }
+
+ #tweeti {
+     width: 5%;
+     min-width: 20px;
+     right: 0;
+     position: absolute;
+     color: rgb(40, 181, 216);
+     animation: tweetRot 1s 1;
+     cursor: pointer;
+ }
+
+ @keyframes tweetRot {
+     from {
+         transform: rotateZ(0deg);
+     }
+
+     to {
+         transform: rotateZ(360deg);
+     }
+ }
+
+ @media screen and (max-width: 400px) {
+     .container {
+         width: 98vw;
+
+         height: 95vh;
+
+     }
+
+ }

@@ -1,0 +1,39 @@
+
+
+<!-- Main file -->
+<!-- Short project using HTML,CSS,JS -->
+<!-- Fetching Api data of Quotes and displaying randomly and sharing in tweet feed directly  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css"
+        integrity="sha512-BnbUDfEUfV0Slx6TunuB042k9tuKe3xrD6q4mg5Ed72LTgzDIcLPxg6yI2gcMFRyomt+yJJxE+zJwNmxki6/RA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Quotes</title>
+
+   <link rel="stylesheet" href="./index.css"> <!-- CSS style file -->
+
+</head>
+
+<body>
+
+    <!-- //// Html part  -->
+   <div class="container">
+       <div class="tweet">
+        <img id="tweeti" src="twitter-brands.svg" alt="tweet" title="let's tweet" onclick="tweetme()">
+        <i class="fa fa-solid fa-quote-left" style="position:absolute;top: 18%;left: 5%; color: rgb(23, 4, 107); font-size: 3vw;"></i>
+    </div>
+       <div id="quote" >quote </div>
+       <div id="authr" title="Author">author</div>
+       <button id="reload" title="Change quote" onclick="getquotes()">Quote </button>
+   </div>    
+<!-- ///////////////////////// -->
+
+   <script src="./index.js" >  // Importing Script file
+   </script>
+   
+</body>
+</html>
