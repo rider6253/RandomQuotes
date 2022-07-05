@@ -1,9 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 body{
     margin: 0;
     padding: 0;
     width: 100vw;
     height:100vh;
-    background-color: #9acd32;
+    background-image: radial-gradient(rgb(127, 214, 127) 50%,rgb(247, 247, 95) ,rgb(226, 224, 224));
 }
 
 
@@ -16,9 +20,10 @@ body{
      width: 50vw;
      min-height: 50vh;
      height: auto;
-     border: 1px solid red;
+     /* border: 1px solid red; */
+     box-shadow: 5px 10px 0 0 grey;
 
-     background-color: rgb(82, 208, 247);
+     background-image: linear-gradient(225deg,white 5%,rgb(172, 106, 235) 10%);
      border-radius: 15px 0 15px 15px;
      font-weight: 800;
      color: rgb(44, 14, 4);
@@ -27,6 +32,7 @@ body{
 
  #reload {
      position: absolute;
+     margin: 0;
      bottom: 0;
      width: 100%;
      height: 10%;
@@ -36,10 +42,13 @@ body{
      font-weight: 1000;
      border: none;
      cursor: pointer;
+     font-size: large;
  }
 
  #reload:hover {
-     background-color: rgb(28, 151, 151);
+     background-color: rgb(6, 158, 158);
+     color: white;
+     font-size: x-large;
  }
 
  #quote {
@@ -66,13 +75,14 @@ body{
  }
 
  #tweeti {
-     width: 5%;
-     min-width: 20px;
+     /* width: 5%;
+     min-width: 20px; */
      right: 0;
      position: absolute;
-     color: rgb(40, 181, 216);
+     color: rgb(5, 159, 197);
      animation: tweetRot 1s 1;
      cursor: pointer;
+     font-size: large;
  }
 
  @keyframes tweetRot {
@@ -87,9 +97,9 @@ body{
 
  @media screen and (max-width: 400px) {
      .container {
-         width: 98vw;
+         width: 96vw;
 
-         height: 95vh;
+         height: 100%;
 
      }
 

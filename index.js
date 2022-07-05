@@ -7,6 +7,7 @@ const auth = document.getElementById("authr");
 const getnewQuotes = () => {
   rnum = Math.floor(Math.random() * realData.length);
 
+  
   quote.innerText = `${realData[rnum].text}`;
   let author = realData[rnum].author;
   if (author == null) author = "Unknown";
